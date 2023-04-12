@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wamaya portfolio</title>
     <link rel="icon" type="image/x-icon" href="media/logo-dark.ico">
-    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="apple-touch-icon" sizes="180x180" href="media/favicon_io/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="media/favicon_io/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="media/favicon_io/favicon-16x16.png">
@@ -15,20 +15,24 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter:wght@300;400&family=Poppins:wght@300;400&family=Roboto&display=swap" rel="stylesheet">
 </head>
-<body>
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
      <!-- navigation bar -->
     <header>
-        <nav  class="white">
-            <ul class="no-style-deco" id="navbar">
-                <li><a href="#"><img id="logo" src="media/favicon_io/favicon.ico" alt="logo"></a></li>
-                <li><a href="#"><img id="menu-icon" src="media/Union.png" alt="menu"></a></li>
-                <ul class="no-style-deco" id="desk-nav">
-                <li class="desk-nav"><a href="#">Portfolio</a></li>
-                <li class="desk-nav"><a href="#">About</a></li>
-                <li class="desk-nav"><a href="#">Contact</a></li>
-                <li class="desk-nav"><a href="#"><img src="media/Icon - Mail.png" alt="Email icon"></a></li>
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+                <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img id="logo" src="media/favicon_io/favicon.ico" alt="logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="#projects">Portfolio</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#footer-links">Contact</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact-me"><img src="media/Icon - Mail.png" alt="Email icon"></a></li>
+                </div>
+            </div>
                 </ul>
-            </ul>
         </nav>
     </header>
 
@@ -36,18 +40,18 @@
     
     <section id="home">
         <aside>
-            <ul id="social-items" class="no-style-deco">
-                <li><a href="#"><img class="social-item" src="media/github.png" alt="github"></a></li>
-                <li><a href="#"><img class="social-item" src="media/Linkedin icon.png" alt="linkedIn"></a></li>
-                <li><a href="#"><img class="social-item" src="media/angel list.png" alt="angel list"></a></li>
-                <li><a href="#"><img class="social-item" src="media/twitter.png" alt="twitter"></a></li>
-                <li><a href="#"><img class="social-item" src="media/medium.png" alt="medium"></a></li>          
+            <ul id="social-items">
+                <li><a href="#"><img src="media/github.png" alt="github"></a></li>
+                <li><a href="#"><img src="media/Linkedin icon.png" alt="linkedIn"></a></li>
+                <li><a href="#"><img src="media/angel list.png" alt="angel list"></a></li>
+                <li><a href="#"><img src="media/twitter.png" alt="twitter"></a></li>
+                <li><a href="#"><img src="media/medium.png" alt="medium"></a></li>          
             </ul>
         </aside>
         <div>
-        <h1 class="orange-color">Hey There. <br> I'm Wamaya.</h1>
+        <h1>Hey There. <br> I'm Wamaya.</h1>
         <h2>I'm a Software Developer</h2>
-        <p class="white text">I can help you build a product , feature or website. Look through some of 
+        <p>I can help you build a product , feature or website. Look through some of 
             my work and experience! If you like what you see and have a project you need coded,<br>
             don't hesitate to contact me.</p>
         </div>
@@ -59,92 +63,92 @@
     <!-- Works section -->
     <section id="projects">
         <div id="project-intro">
-        <h2 id="work-title" class="project-title">My Recent Works</h2>      
-        <div class="line"></div>         
+        <h2 id="work-title">My Recent Works</h2>      
+        <div ></div>         
         <img id="work-cover" src="media/multipost.png" alt="Multipost image">
 
      
           <article>
-                <h2 id="article-h" class="project-title">Multi-Post Stories</h2>
-                <p  class="article-p" class="text">A daily selection of privately personalized reads; no accounts or sign-ups required. This has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.</p>
-                <ul class="btn no-style-deco" id="article-btn">
-                    <li> <button type="button" class="grey-button">CSS</button></li>
-                    <li> <button type="button" class="grey-button">HTML</button></li>
-                    <li><button type="button" class="grey-button">Bootstrap</button></li>
-                    <li> <button type="button" class="grey-button">Ruby</button></li>
+                <h2 id="article-h">Multi-Post Stories</h2>
+                <p>A daily selection of privately personalized reads; no accounts or sign-ups required. This has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.</p>
+                <ul id="article-btn">
+                    <li> <button type="button">CSS</button></li>
+                    <li> <button type="button">HTML</button></li>
+                    <li><button type="button">Bootstrap</button></li>
+                    <li> <button type="button">Ruby</button></li>
                 </ul>
              
-                <button type="button" class="art-btn">See project</button>
+                <button type="button">See project</button>
             </article>
         </div>
             
 
-            <ul id="project-items" class="no-style-deco"> 
-            <li class="project-item"> 
-                <h2 class="title">Profesional Art Printing Data</h2>
-                <p class="text">A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.</p>
-                <ul class="btn no-style-deco">
-                    <li> <button type="button" class="grey-button">HTML</button></li>
-                    <li> <button type="button" class="grey-button">Bootstrap</button></li>
-                    <li><button type="button" class="grey-button">Ruby</button></li>
+            <ul id="project-items"> 
+            <li> 
+                <h2>Profesional Art Printing Data</h2>
+                <p>A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.</p>
+                <ul>
+                    <li> <button type="button">HTML</button></li>
+                    <li> <button type="button">Bootstrap</button></li>
+                    <li><button type="button">Ruby</button></li>
                 </ul>
-            <button type="button" class="orange-button">See project</button>                      
+            <button type="button">See project</button>                      
             </li>
 
-            <li class="project-item" id="work-2"> 
-                <h2 class="title">Data Dashboard Healthcare</h2>
-                <p class="text">A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.</p>
-                <ul class="btn no-style-deco">
-                    <li> <button type="button" class="grey-button">HTML</button></li>
-                    <li> <button type="button" class="grey-button">Bootstrap</button></li>
-                    <li><button type="button" class="grey-button">Ruby</button></li>
+            <li id="work-2"> 
+                <h2>Data Dashboard Healthcare</h2>
+                <p>A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.</p>
+                <ul>
+                    <li> <button type="button">HTML</button></li>
+                    <li> <button type="button">Bootstrap</button></li>
+                    <li><button type="button">Ruby</button></li>
                 </ul>
-                <button type="button" class="orange-button">See project</button>            
+                <button type="button">See project</button>            
             </li>
 
-            <li class="project-item" id="work-3"> 
-                <h2 class="title">Website Portfolio </h2>
-                <p class="text">A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.</p>
-                <ul class="btn no-style-deco">
-                    <li> <button type="button" class="grey-button">HTML</button></li>
-                    <li> <button type="button" class="grey-button">Bootstrap</button></li>
-                     <li><button type="button" class="grey-button">Ruby</button></li>
+            <li id="work-3"> 
+                <h2>Website Portfolio </h2>
+                <p>A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.</p>
+                <ul>
+                    <li> <button type="button">HTML</button></li>
+                    <li> <button type="button">Bootstrap</button></li>
+                     <li><button type="button">Ruby</button></li>
                 </ul>
-                    <button type="button" class="orange-button">See project</button>                 
+                    <button type="button">See project</button>                 
                 
             </li>
 
-            <li class="project-item" id="work-4">
-                <h2 class="title">Profesional Art Printing Data More</h2>
-                <p class="text">A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.</p>
-                <ul class="btn no-style-deco">
-                        <li> <button type="button" class="grey-button">HTML</button></li>
-                        <li> <button type="button" class="grey-button">Bootstrap</button></li>
-                        <li><button type="button" class="grey-button">Ruby</button></li>
+            <li id="work-4">
+                <h2>Profesional Art Printing Data More</h2>
+                <p>A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.</p>
+                <ul>
+                        <li> <button type="button">HTML</button></li>
+                        <li> <button type="button">Bootstrap</button></li>
+                        <li><button type="button">Ruby</button></li>
                 </ul>
-                <button type="button" class="orange-button">See project</button>                    
+                <button type="button">See project</button>                    
             </li>
 
-            <li class="project-item" id="work-5"> 
-                <h2 class="title">Data Dashboard Healthcare</h2>
-                <p class="text">A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.</p>
-                <ul class="btn no-style-deco">
-                    <li> <button type="button" class="grey-button">HTML</button></li>
-                    <li> <button type="button" class="grey-button">Bootstrap</button></li>
-                    <li><button type="button" class="grey-button">Ruby</button></li>
+            <li id="work-5"> 
+                <h2>Data Dashboard Healthcare</h2>
+                <p>A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.</p>
+                <ul>
+                    <li> <button type="button">HTML</button></li>
+                    <li> <button type="button">Bootstrap</button></li>
+                    <li><button type="button">Ruby</button></li>
                 </ul>
-                <button type="button" class="orange-button">See project</button>                                            
+                <button type="button">See project</button>                                            
             </li>
 
-            <li class="project-item" id="work-6"> 
-                <h2 class="title">Website Portfolio </h2>
-                <p class="text">A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.</p>
-                <ul class="btn no-style-deco">
-                    <li> <button type="button" class="grey-button">HTML</button></li>
-                    <li> <button type="button" class="grey-button">Bootstrap</button></li>
-                    <li><button type="button" class="grey-button">Ruby</button></li>
+            <li id="work-6"> 
+                <h2>Website Portfolio </h2>
+                <p>A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.</p>
+                <ul>
+                    <li> <button type="button">HTML</button></li>
+                    <li> <button type="button">Bootstrap</button></li>
+                    <li><button type="button">Ruby</button></li>
                 </ul>
-                <button type="button" class="orange-button">See project</button>
+                <button type="button">See project</button>
             </li>
     </ul>
     </section>
@@ -152,41 +156,41 @@
     <!-- About Section -->
     <section id="about">
         <div id="intro">
-            <h2 id="about-me" class="orange-color">About me</h2>
-            <p id="intro-p" class="text">Hey there! I can help you build a product, feature or website. Look through some of my work and experience! If you like what you see and have a project you need coded, don't hesitate to contact me.</p>
-            <button id="abt-btn" type="button" class="art-btn" >Get my resume</button>
+            <h2 id="about-me">About me</h2>
+            <p id="intro-p">Hey there! I can help you build a product, feature or website. Look through some of my work and experience! If you like what you see and have a project you need coded, don't hesitate to contact me.</p>
+            <button id="abt-btn" type="button" >Get my resume</button>
         </div >
 
         <div id="abt-line"></div>
         
-        <ul id="cv" class="no-style-deco">
-            <li class="skill">
-                <h3 class="title"><img src="media/Rectangle 55.png" alt="icon"> Language</h3>
-                <ul class="no-style-deco list">
-                    <li class="list-item">JavaScript</li>
-                    <li class="list-item">Ruby</li>
-                    <li class="list-item">HTML</li>
-                    <li class="list-item">CSS</li>
+        <ul id="cv">
+            <li>
+                <h3><img src="media/Rectangle 55.png" alt="icon"> Language</h3>
+                <ul>
+                    <li>JavaScript</li>
+                    <li>Ruby</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
                 </ul>
             </li>
-            <li class="skill">
-                <h3 class="title"><img src="media/Rectangle 56.png" alt="icon">   Frameworks</h3>
-                <ul class="no-style-deco list">
-                    <li class="list-item">React.js</li>
-                    <li class="list-item">Ruby on Rails</li>
-                    <li class="list-item">RSpec</li>
-                    <li class="list-item">Capybara</li>
-                    <li class="list-item">Selenium</li>                           
+            <li>
+                <h3><img src="media/Rectangle 56.png" alt="icon">   Frameworks</h3>
+                <ul>
+                    <li>React.js</li>
+                    <li>Ruby on Rails</li>
+                    <li>RSpec</li>
+                    <li>Capybara</li>
+                    <li>Selenium</li>                           
                 </ul>
             </li>
-            <li class="skill">
-                <h3 class="title"><img src="media/Rectangle 57.png" alt="icon">   Skills</h3>
-                <ul class="no-style-deco list">
-                    <li class="list-item">Database Management</li>
-                    <li class="list-item">Version Control</li>
-                    <li class="list-item">CLI</li>
-                    <li class="list-item">API Design</li>
-                    <li class="list-item">Web Development</li>
+            <li>
+                <h3><img src="media/Rectangle 57.png" alt="icon">   Skills</h3>
+                <ul>
+                    <li>Database Management</li>
+                    <li>Version Control</li>
+                    <li>CLI</li>
+                    <li>API Design</li>
+                    <li>Web Development</li>
                 </ul>
             </li>
         </ul>
@@ -195,24 +199,25 @@
     <section id="contact-me">
         <p>I'm always interested in hearing about new projects, so if you'd like to chat please <br> get in touch.</p>
         <form id="contact-form" action="https://formspree.io/f/xbjezbpa" method="post">
-            <input class="input txt" type="text" id="fname" name="fname" maxlength="30" placeholder="First name" required>
-            <input class="input txt" type="text" id="lname" name="lname" maxlength="30" placeholder="Last name" required>
-            <input class="input txt" name="email" id="email" type="email" placeholder="Email address" required>
+            <input type="text" id="fname" name="fname" maxlength="30" placeholder="First name" required>
+            <input type="text" id="lname" name="lname" maxlength="30" placeholder="Last name" required>
+            <input name="email" id="email" type="email" placeholder="Email address" required>
             <textarea name="messege" id="messege" cols="30" rows="5" maxlength="500" required placeholder="Write me something..."></textarea>
-           <div id="submit"> <button class="art-btn" type="submit">Get in touch</button></div>   
+           <div id="submit"> <button type="submit">Get in touch</button></div>   
         </form>
     </section>
     <div id="contact-line"></div>
     <footer>
         
-        <ul class="no-style-deco" id="footer-links">
-            <li><a href="#"><img class="social-item" src="media/git f.png" alt="git icon"></a></li>
-            <li><a href="#"><img class="social-item" src="media/linkedin f.png" alt="linkedin icon"></a></li>
-            <li><a href="#"><img class="social-item" src="media/chil f.png" alt="chil icon"></a></li>
-            <li><a href="#"><img class="social-item" src="media/twitter f.png" alt="twitter"></a></li>
-            <li><a href="#"><img class="social-item" src="media/email f.png" alt="email icon"></a></li>          
+        <ul id="footer-links">
+            <li><a href="#"><img src="media/git f.png" alt="git icon"></a></li>
+            <li><a href="#"><img src="media/linkedin f.png" alt="linkedin icon"></a></li>
+            <li><a href="#"><img src="media/chil f.png" alt="chil icon"></a></li>
+            <li><a href="#"><img src="media/twitter f.png" alt="twitter"></a></li>
+            <li><a href="#"><img src="media/email f.png" alt="email icon"></a></li>          
         </ul>
         <div id="footer-line"></div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
