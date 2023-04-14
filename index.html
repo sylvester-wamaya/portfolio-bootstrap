@@ -219,15 +219,15 @@
     </section>
     <section id="contact-me" class="container mt-5 d-flex">
        
-        <p class="pe-5 ps-5">I'm always interested in hearing about new projects, so if you'd like to chat please <br> get in touch.</p>
-        <form id="contact-form" action="https://formspree.io/f/xbjezbpa" method="post">
-            <div>
-           <input class="form-control" type="text" id="fname" name="fname" maxlength="30" placeholder="First name" required>
-            <input  class="form-control"  type="text" id="lname" name="lname" maxlength="30" placeholder="Last name" required>
+        <p class="pe-5 ps-5 w-50">I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</p>
+        <form class="w-100" id="contact-form" action="https://formspree.io/f/xbjezbpa" method="post">
+            <div class="row mb-2">
+           <input class="form-control col me-2 border border-start-0 border-end-0 border-top-0" type="text" id="fname" name="fname" maxlength="30" placeholder="First name" required>
+            <input  class="form-control col border border-start-0 border-end-0 border-top-0"  type="text" id="lname" name="lname" maxlength="30" placeholder="Last name" required>
         </div>
-            <input class="form-control" name="email" id="email" type="email" placeholder="Email address" required>
-            <textarea class="form-control" name="messege" id="messege" cols="30" rows="5" maxlength="500" required placeholder="Write me something..."></textarea>
-           <div id="submit"> <button type="submit">Get in touch</button></div>   
+            <input class="form-control mb-2 border border-start-0 border-end-0 border-top-0" name="email" id="email" type="email" placeholder="Email address" required>
+            <textarea style="background-color: #f9f9f9;" class="form-control mb-2 border border-0" name="messege" id="messege" cols="30" rows="5" maxlength="500" required placeholder="Write me something..."></textarea>
+           <div id="submit"> <button class=" btn btn-danger" type="submit">Get in touch</button></div>   
         </form>
     </section>
     <hr>
